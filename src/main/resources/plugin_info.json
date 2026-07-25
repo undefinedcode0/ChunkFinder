@@ -1,8 +1,8 @@
 {
-  "name": "ExamplePlugin",
+  "name": "ChunkFinder",
   "version": "${version}",
-  "description": "Example implementation of a plugin for Lambda.",
-  "url": "https://github.com/lambda-client/ExamplePlugin",
+  "description": "Flags chunks staying loaded abnormally long relative to player distance",
+  "url": "https://github.com/undefinedcode0/ChunkFinder",
   "authors": [ "me", "you" ],
   "main_class": "com.lambda.ExamplePlugin",
   "min_api_version": "3.3",
