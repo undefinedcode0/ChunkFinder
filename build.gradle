@@ -72,7 +72,7 @@ dependencies {
     minecraft "net.minecraftforge:forge:$minecraftVersion-$forgeVersion"
 
     // Online maven dependency coming soon
-    implementation 'com.github.lambda-client:lambda:-SNAPSHOT'
+    implementation 'com.github.lambda-client:lambda-legacy:master-SNAPSHOT'
 
     implementation('org.spongepowered:mixin:0.8.5') {
         exclude module: 'commons-io'
