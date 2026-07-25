@@ -17,8 +17,13 @@ internal object ChunkFinderHud : PluginLabelHud(
             displayText.add("ChunkFinder: no suspects", secondaryColor)
             return
         }
-        ChunkFinder.suspects.forEachIndexed { i, (pos, score) ->
-            displayText.add("${i + 1}. (${pos.xStart}, ${pos.zStart}) - %.0fs".format(score), primaryColor)
+        ChunkFinder.suspects.forEachIndexed { i, (pos, ageSeconds) ->
+            val ageText = if (ageSeconds >= 60) {
+                "%.1fm".format(ageSeconds / 60.0)
+            } else {
+                "%.0fs".format(ageSeconds)
+            }
+            displayText.add("${i + 1}. (${pos.xStart}, ${pos.zStart}) - $ageText", primaryColor)
         }
     }
 }

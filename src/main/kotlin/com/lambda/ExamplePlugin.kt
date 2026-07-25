@@ -20,8 +20,6 @@ internal object ExamplePlugin : Plugin() {
         hudElements.add(ExampleLabelHud)
         hudElements.add(ChunkFinderHud)
         managers.add(ExampleManager)
-
-        bgJobs.add(BackgroundJob("ExampleJob", 10000L) { LambdaMod.LOG.info("Hello its me the BackgroundJob of your example plugin.") })
     }
 
     override fun onUnload() {
